@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Baltimore's Best Cleaning — Dundalk</title>
+<!-- Google tag (GA4) — tracks which emails/categories drive mockup views -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8VNPY96XP9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8VNPY96XP9', {
+    page_title: 'Baltimore\'s Best Cleaning',
+    custom_map: {'dimension1': 'business_category', 'dimension2': 'business_name'}
+  });
+  gtag('event', 'mockup_view', {
+    business_category: 'cleaning service',
+    business_name: 'Baltimore\'s Best Cleaning',
+    business_city: 'Dundalk'
+  });
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--a:#7AB8DC;--d:#3A7EA8;--bg:#060a10;--surf:#111;--border:#1e1e1e;--text:#e2e2e2;--muted:#777}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+img{display:block;width:100%;object-fit:cover}
+a{color:var(--a);text-decoration:none}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:300;height:70px;display:flex;align-items:center;
+     justify-content:space-between;padding:0 6%;transition:background .3s,border-color .3s;
+     border-bottom:1px solid transparent}
+nav.scrolled{background:rgba(8,8,8,.97);backdrop-filter:blur(18px);border-color:rgba(255,255,255,.06)}
+.nav-logo{font-family:"Playfair Display",serif;font-size:19px;font-weight:700;color:#fff;letter-spacing:-.3px}
+.nav-logo em{color:var(--a);font-style:normal}
+.nav-links{display:flex;gap:28px;font-size:13px;font-weight:500}
+.nav-links a{color:#999;transition:.15s}.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--a);color:#080808;padding:10px 22px;border-radius:8px;
+           font-weight:700;font-size:13px;letter-spacing:.2px;transition:opacity .15s,transform .15s}
+.nav-cta:hover{opacity:.88;transform:translateY(-1px)}
+@media(max-width:768px){.nav-links{display:none}}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;
+        text-align:center;position:relative;overflow:hidden;padding:110px 6% 80px}
+.hero-bg{position:absolute;inset:0;z-index:0;background-image:url('https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/baltimore-s-best-cleaning-img0.jpg');
+           background-size:cover;background-position:center;
+           animation:kenBurns 28s ease-in-out infinite}
+.hero-vid{position:absolute;inset:0;z-index:1;width:100%;height:100%;
+            object-fit:cover;opacity:0;transition:opacity 1.8s ease}
+.hero-vid.loaded{opacity:1}
+.hero-overlay{position:absolute;inset:0;z-index:2;
+  background:linear-gradient(to bottom,rgba(0,0,0,.42) 0%,#060a10bb 65%,#060a10 100%)}
+.hero-content{position:relative;z-index:3;max-width:800px;margin:0 auto}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.08);backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.15);border-radius:30px;
+  padding:7px 18px;font-size:12px;color:rgba(255,255,255,.85);
+  margin-bottom:32px;letter-spacing:.04em;font-weight:600}
+.hero-badge span{color:var(--a)}
+.hero h1{font-family:"Playfair Display",serif;
+  font-size:clamp(2.8rem,8vw,5.5rem);font-weight:900;
+  color:#fff;line-height:1.05;margin-bottom:20px;
+  text-shadow:0 2px 32px rgba(0,0,0,.6)}
+.hero h1 em{color:var(--a);font-style:normal}
+.hero-sub{font-size:clamp(1rem,2.2vw,1.2rem);color:rgba(255,255,255,.75);
+  max-width:520px;margin:0 auto 44px;line-height:1.7}
+.hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:var(--a);color:#080808;padding:16px 38px;border-radius:10px;
+  font-weight:800;font-size:15px;display:inline-flex;align-items:center;gap:8px;
+  transition:opacity .15s,transform .15s}
+.btn-primary:hover{opacity:.88;transform:translateY(-2px)}
+.btn-outline{border:1.5px solid rgba(255,255,255,.3);color:#fff;padding:16px 36px;
+  border-radius:10px;font-weight:600;font-size:15px;display:inline-flex;align-items:center;gap:8px;
+  transition:border-color .15s,color .15s}
+.btn-outline:hover{border-color:var(--a);color:var(--a)}
+
+/* TRUST BAR */
+.trust{background:rgba(255,255,255,.025);border-top:1px solid var(--border);
+         border-bottom:1px solid var(--border);padding:28px 6%;
+         display:flex;justify-content:center;flex-wrap:wrap}
+.trust-item{text-align:center;padding:8px 40px;border-right:1px solid var(--border)}
+.trust-item:last-child{border-right:none}
+.trust-num{font-family:"Playfair Display",serif;font-size:28px;font-weight:700;color:var(--a)}
+.trust-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:4px}
+
+/* SECTIONS */
+section{padding:96px 6%}
+.eyebrow{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--a);margin-bottom:14px}
+h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:900;
+    color:#fff;line-height:1.1;margin-bottom:16px}
+.section-sub{font-size:1.05rem;color:var(--muted);max-width:560px;line-height:1.75;margin-bottom:56px}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.svc-card{background:var(--surf);border:1px solid var(--border);border-radius:16px;padding:36px 28px;
+  transition:border-color .2s,transform .2s}
+.svc-card:hover{border-color:var(--a);transform:translateY(-5px)}
+.svc-icon{font-size:26px;width:54px;height:54px;border-radius:14px;
+  background:#7AB8DC18;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.svc-card h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:10px}
+.svc-card p{font-size:14px;color:#666;line-height:1.7}
+
+/* GALLERY */
+.gallery{display:grid;grid-template-columns:1.6fr 1fr 1fr;grid-template-rows:340px 240px;
+           gap:12px;border-radius:18px;overflow:hidden}
+.gal-item{overflow:hidden;position:relative}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;
+  background:linear-gradient(135deg,#3A7EA8,#060a10)}
+.gal-item:hover img{transform:scale(1.06)}
+.gal-item:first-child{grid-row:1/3}
+@media(max-width:768px){
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .gal-item:first-child{grid-row:auto;grid-column:1/-1}
+}
+
+/* WHAT'S INCLUDED */
+.incl-section{background:rgba(255,255,255,.015);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.incl-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.incl-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.incl-item{display:flex;align-items:center;gap:12px;font-size:14px;color:#ccc;font-weight:500}
+.incl-check{width:26px;height:26px;border-radius:50%;background:#7AB8DC20;border:1px solid #7AB8DC60;
+  display:flex;align-items:center;justify-content:center;color:var(--a);font-weight:700;font-size:13px;flex-shrink:0}
+.price-card{background:linear-gradient(135deg,#3A7EA822,var(--surf));
+  border:1px solid #7AB8DC50;border-radius:20px;padding:44px 40px;text-align:center}
+.price-badge{display:inline-block;background:#7AB8DC18;border:1px solid #7AB8DC40;
+  color:var(--a);border-radius:8px;padding:6px 16px;font-size:12px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
+.price-amount{font-family:"Playfair Display",serif;font-size:64px;font-weight:900;color:#fff;line-height:1}
+.price-label{color:var(--muted);font-size:14px;margin:8px 0 24px}
+.price-features{text-align:left;margin-bottom:28px}
+.price-feature{display:flex;align-items:center;gap:10px;padding:8px 0;
+  border-bottom:1px solid #7AB8DC20;font-size:14px;color:#bbb}
+.price-feature:last-child{border-bottom:none}
+.price-feature span{color:var(--a);font-weight:700}
+@media(max-width:768px){.incl-inner{grid-template-columns:1fr}.incl-grid{grid-template-columns:1fr}}
+
+/* TIMELINE */
+.timeline{display:flex;justify-content:center;gap:0;flex-wrap:wrap;margin-top:48px}
+.tl-step{display:flex;flex-direction:column;align-items:center;flex:1;min-width:140px;
+           position:relative;padding:0 12px}
+.tl-step:not(:last-child)::after{content:'→';position:absolute;right:-8px;top:28px;
+  color:#7AB8DC;font-size:20px;font-weight:700}
+.tl-num{width:56px;height:56px;border-radius:50%;
+  background:linear-gradient(135deg,#7AB8DC,#3A7EA8);
+  display:flex;align-items:center;justify-content:center;
+  font-family:"Playfair Display",serif;font-size:22px;font-weight:900;color:#fff;
+  margin-bottom:16px;box-shadow:0 0 0 6px #7AB8DC20}
+.tl-title{font-size:14px;font-weight:700;color:#fff;text-align:center;margin-bottom:6px}
+.tl-desc{font-size:12px;color:var(--muted);text-align:center;line-height:1.6}
+
+/* REVIEWS */
+.rev-bg{background:rgba(255,255,255,.02);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.rev-card{background:var(--surf);border:1px solid var(--border);border-radius:16px;padding:30px 26px}
+.rev-top{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.rev-avatar{width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,#7AB8DC,#3A7EA8);
+  display:flex;align-items:center;justify-content:center;
+  font-size:17px;font-weight:700;color:#fff;flex-shrink:0}
+.rev-name{font-weight:700;color:#fff;font-size:14px}
+.rev-stars{color:#FBBC04;font-size:13px;margin-top:3px;letter-spacing:1px}
+.rev-text{font-size:14px;color:#777;line-height:1.75;font-style:italic}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:44px}
+.contact-card{background:var(--surf);border:1px solid var(--border);border-radius:14px;
+  padding:30px;text-align:center}
+.contact-icon{font-size:28px;margin-bottom:12px}
+.contact-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
+.contact-val{color:#ddd;font-weight:700;font-size:15px;line-height:1.5}
+.hours-row{display:flex;justify-content:space-between;font-size:13px;padding:6px 0;
+  border-bottom:1px solid var(--border)}
+.hours-row:last-child{border-bottom:none}
+.hours-day{color:var(--muted)}.hours-time{color:#ddd;font-weight:600}
+.map-wrap{margin-top:28px;border-radius:16px;overflow:hidden;border:1px solid var(--border);height:300px}
+.map-wrap iframe{width:100%;height:100%;border:0;display:block}
+
+/* CTA SECTION */
+.cta-sect{text-align:center;background:linear-gradient(135deg,#3A7EA825,#060a10);
+  border-top:1px solid #7AB8DC30;padding:96px 6%}
+.cta-sect h2{margin-bottom:16px}
+.cta-sect p{color:var(--muted);margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto}
+
+/* LEAD FORM */
+.form-sect{background:rgba(255,255,255,.015);border-top:1px solid var(--border)}
+.form-inner{max-width:540px;margin:0 auto;text-align:center}
+.form-inner h2{margin-bottom:10px}
+.form-inner p{color:var(--muted);margin-bottom:36px}
+.lead-form{display:flex;flex-direction:column;gap:14px;text-align:left}
+.lead-form input,.lead-form textarea{
+  background:#0f0f0f;border:1px solid #2a2a2a;border-radius:10px;
+  padding:15px 18px;color:#fff;font-size:15px;font-family:"Inter",sans-serif;
+  outline:none;transition:border-color .2s;width:100%}
+.lead-form input:focus,.lead-form textarea:focus{border-color:#7AB8DC}
+.lead-form textarea{resize:vertical;min-height:90px}
+.lead-submit{background:#7AB8DC;color:#060a10;font-weight:800;font-size:16px;
+  padding:17px;border:none;border-radius:10px;cursor:pointer;
+  transition:opacity .2s,transform .15s;font-family:"Inter",sans-serif}
+.lead-submit:hover{opacity:.88;transform:translateY(-2px)}
+.form-success{display:none;color:#7AB8DC;font-weight:700;font-size:17px;margin-top:16px;text-align:center}
+
+/* FOOTER */
+footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-logo{font-family:"Playfair Display",serif;font-size:17px;font-weight:700;color:#fff}
+.footer-logo em{color:#7AB8DC;font-style:normal}
+.footer-copy{font-size:12px;color:#444}
+.footer-badge{font-size:11px;color:#444;border:1px solid #1c1c1c;border-radius:6px;
+  padding:5px 12px;background:#0a0a0a}
+.footer-badge a{color:#7AB8DC;font-weight:600}
+
+/* STICKY CTA */
+#sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:400;
+  background:rgba(6,6,6,.97);backdrop-filter:blur(18px);border-top:1px solid #7AB8DC33;
+  padding:14px 6%;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  transform:translateY(100%);transition:transform .4s cubic-bezier(.22,.68,0,1.2)}
+#sticky-cta.show{transform:translateY(0)}
+.sticky-text{font-size:14px;color:#888}.sticky-text strong{color:#fff}
+.sticky-btn{background:var(--a);color:#060a10;font-weight:800;font-size:14px;
+  padding:12px 26px;border-radius:8px;white-space:nowrap;transition:opacity .15s}
+.sticky-btn:hover{opacity:.88}
+@media(max-width:640px){.sticky-text{display:none}#sticky-cta{justify-content:center}}
+
+/* WATERMARK */
+.watermark{position:fixed;bottom:72px;right:18px;z-index:200;
+  background:rgba(10,10,10,.96);backdrop-filter:blur(10px);
+  border:1px solid #7AB8DC55;border-radius:10px;padding:10px 14px;
+  font-size:11px;color:#aaa;box-shadow:0 4px 24px rgba(0,0,0,.6)}
+.watermark strong{color:#7AB8DC}
+.watermark a{color:#7AB8DC;font-weight:600;text-decoration:none}
+
+/* ANIMATIONS */
+@keyframes kenBurns{
+  0%   {transform:scale(1) translate(0,0)}
+  33%  {transform:scale(1.08) translate(-1%,-1%)}
+  66%  {transform:scale(1.05) translate(1%,.5%)}
+  100% {transform:scale(1) translate(0,0)}
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.hero-content>*{opacity:0;animation:fadeUp .7s cubic-bezier(.22,.68,0,1.2) forwards}
+.hero-content .hero-badge{animation-delay:.1s}
+.hero-content h1{animation-delay:.25s}
+.hero-content .hero-sub{animation-delay:.4s}
+.hero-content .hero-btns{animation-delay:.55s}
+[data-reveal]{opacity:0;transform:translateY(36px);transition:opacity .7s ease,transform .7s ease;animation:fadeUp .8s ease .4s both}
+[data-reveal].visible{opacity:1;transform:translateY(0);animation:none}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">Baltimore's<em>BestCleaning</em></div>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="tel:4106575999" class="nav-cta">📞 Call Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <video class="hero-vid" id="heroVid" autoplay muted loop playsinline poster="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/baltimore-s-best-cleaning-img0.jpg"><source src="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/baltimore-s-best-cleaning-hero.mp4" type="video/mp4"></video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span>Cleaning</span>&nbsp;·&nbsp;Dundalk, PA</div>
+    <h1>Baltimore's Best Cleaning</h1>
+    <p class="hero-sub">Professional Cleaning You Can Trust — proudly serving Dundalk and the surrounding area.</p>
+    <div class="hero-btns">
+      <a href="tel:4106575999" class="btn-primary">📞 (410) 657-5999</a>
+      <a href="#get-started" class="btn-outline">Get This Website →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust" data-reveal>
+  <div class="trust-item"><div class="trust-num">10+</div><div class="trust-label">Years Serving Dundalk</div></div>
+  <div class="trust-item"><div class="trust-num">500+</div><div class="trust-label">Happy Customers</div></div>
+  <div class="trust-item"><div class="trust-num">5★</div><div class="trust-label">Google Rating</div></div>
+  <div class="trust-item"><div class="trust-num">Same Day</div><div class="trust-label">Response</div></div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <p class="eyebrow" data-reveal>What We Offer</p>
+  <h2 data-reveal>Our Services</h2>
+  <p class="section-sub" data-reveal>Every service is delivered with the care and expertise your business deserves.</p>
+  <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-icon">🏠</div>
+        <h3>Residential Cleaning</h3>
+        <p>Weekly, bi-weekly, and one-time deep cleans for homes of all sizes.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🏢</div>
+        <h3>Commercial Cleaning</h3>
+        <p>Office, retail, and commercial space cleaning on your schedule.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">📦</div>
+        <h3>Move-In / Move-Out</h3>
+        <p>Thorough cleaning for tenants, landlords, and real estate agents.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">✨</div>
+        <h3>Deep Clean & Sanitize</h3>
+        <p>Full sanitization services including appliances, cabinets, and hard-to-reach areas.</p>
+      </div></div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="padding-top:0">
+  <div class="gallery">
+    <div class="gal-item"><img src="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/baltimore-s-best-cleaning-img1.jpg" alt="Baltimore's Best Cleaning gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#3A7EA8,#060a10)';this.style.display='block';this.remove()"></div>
+    <div class="gal-item"><img src="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/baltimore-s-best-cleaning-img2.jpg" alt="Baltimore's Best Cleaning gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#7AB8DC33,#060a10)';this.remove()"></div>
+    <div class="gal-item"><img src="https://picsum.photos/seed/baltimoresbestcleaning3/800/600" alt="Baltimore's Best Cleaning gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#3A7EA8,#7AB8DC44)';this.remove()"></div>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="incl-section">
+  <div class="incl-inner">
+    <div>
+      <p class="eyebrow" data-reveal>Your New Website Includes</p>
+      <h2 data-reveal>Everything You Need to Get Found Online</h2>
+      <p class="section-sub" data-reveal>No hidden fees, no monthly charges. One flat price — ready to launch in 7 days.</p>
+      <div class="incl-grid" data-reveal>
+      <div class="incl-item">
+        <div class="incl-check">✓</div>
+        <span>Online booking & scheduling</span>
+      </div>
+      <div class="incl-item">
+        <div class="incl-check">✓</div>
+        <span>Service packages & pricing</span>
+      </div>
+      <div class="incl-item">
+        <div class="incl-check">✓</div>
+        <span>Before & after gallery</span>
+      </div>
+      <div class="incl-item">
+        <div class="incl-check">✓</div>
+        <span>Google Maps & coverage area</span>
+      </div>
+      <div class="incl-item">
+        <div class="incl-check">✓</div>
+        <span>Mobile-friendly site</span>
+      </div>
+      <div class="incl-item">
+        <div class="incl-check">✓</div>
+        <span>Quote request form</span>
+      </div></div>
+    </div>
+    <div class="price-card" data-reveal>
+      <div class="price-badge">Starting at $499 — No Monthly Fees</div>
+      <div class="price-amount">$499</div>
+      <div class="price-label">One-time price &nbsp;·&nbsp; No surprises</div>
+      <div class="price-features">
+        <div class="price-feature"><span>✓</span> Custom design for your business</div>
+        <div class="price-feature"><span>✓</span> Mobile-ready & fast loading</div>
+        <div class="price-feature"><span>✓</span> Google-optimized (SEO)</div>
+        <div class="price-feature"><span>✓</span> Live in 7 days</div>
+        <div class="price-feature"><span>✓</span> 30-day support included</div>
+      </div>
+      <a href="#get-started" class="btn-primary" style="display:flex;justify-content:center">I Want This Site →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section style="text-align:center">
+  <p class="eyebrow" data-reveal>How It Works</p>
+  <h2 data-reveal>Live in 7 Days</h2>
+  <p class="section-sub" data-reveal style="margin:0 auto 0">Three simple steps. No tech skills needed from you.</p>
+  <div class="timeline" data-reveal>
+    <div class="tl-step">
+      <div class="tl-num">1</div>
+      <div class="tl-title">You Say Yes</div>
+      <div class="tl-desc">Fill out a 5-minute form with your business details. That's it.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-num">2</div>
+      <div class="tl-title">We Build It</div>
+      <div class="tl-desc">Maya designs your custom site and sends a preview within 3 days.</div>
+    </div>
+    <div class="tl-step">
+      <div class="tl-num">3</div>
+      <div class="tl-title">You Go Live</div>
+      <div class="tl-desc">Approve the design and your site is live within 7 days — guaranteed.</div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="rev-bg">
+  <p class="eyebrow" data-reveal>What People Say</p>
+  <h2 data-reveal>Google Reviews</h2>
+  <p class="section-sub" data-reveal>Real customers, real results.</p>
+  <div class="rev-grid">
+      <div class="rev-card">
+        <div class="rev-top">
+          <div class="rev-avatar">N</div>
+          <div>
+            <div class="rev-name">Nicole T.</div>
+            <div class="rev-stars">★★★★★</div>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/20px-Google_%22G%22_Logo.svg.png"
+               style="margin-left:auto;opacity:.6;width:16px;height:16px" alt="Google" loading="lazy">
+        </div>
+        <p class="rev-text">They left my house spotless. The team was professional, on time, and very thorough. I'm booking them monthly now.</p>
+      </div>
+      <div class="rev-card">
+        <div class="rev-top">
+          <div class="rev-avatar">K</div>
+          <div>
+            <div class="rev-name">Kevin B.</div>
+            <div class="rev-stars">★★★★★</div>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/20px-Google_%22G%22_Logo.svg.png"
+               style="margin-left:auto;opacity:.6;width:16px;height:16px" alt="Google" loading="lazy">
+        </div>
+        <p class="rev-text">Hired them for a move-out clean and got our full deposit back. They're worth every dollar.</p>
+      </div>
+      <div class="rev-card">
+        <div class="rev-top">
+          <div class="rev-avatar">S</div>
+          <div>
+            <div class="rev-name">Susan W.</div>
+            <div class="rev-stars">★★★★☆</div>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/20px-Google_%22G%22_Logo.svg.png"
+               style="margin-left:auto;opacity:.6;width:16px;height:16px" alt="Google" loading="lazy">
+        </div>
+        <p class="rev-text">Reliable and thorough. I've used a lot of cleaning services and this is the best one I've found.</p>
+      </div></div>
+</section>
+
+<!-- CONTACT & MAP -->
+<section id="contact">
+  <p class="eyebrow">Find Us</p>
+  <h2>Hours &amp; Location</h2>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-icon">📞</div>
+      <div class="contact-label">Phone</div>
+      <div class="contact-val"><a href="tel:4106575999" style="color:#ddd">(410) 657-5999</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon">📍</div>
+      <div class="contact-label">Address</div>
+      <div class="contact-val">PO Box 25797, Baltimore, MD, 21224-0497</div>
+    </div>
+    <div class="contact-card" style="grid-column:span 2">
+      <div class="contact-icon">🕐</div>
+      <div class="contact-label" style="margin-bottom:16px">Hours</div>
+      <div class="hours-row"><span class="hours-day">Monday – Friday</span><span class="hours-time">9:00 AM – 7:00 PM</span></div>
+      <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">9:00 AM – 5:00 PM</span></div>
+      <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">Closed</span></div>
+    </div>
+  </div>
+  <div class="map-wrap" data-reveal>
+    <iframe src="https://maps.google.com/maps?q=PO+Box+25797%2C+Baltimore%2C+MD%2C+21224-0497&output=embed&z=15"
+      allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sect">
+  <p class="eyebrow" data-reveal>Ready?</p>
+  <h2 data-reveal>Get Baltimore's Best Cleaning's Website Live in 7 Days</h2>
+  <p data-reveal>Starting at $499. No monthly fees. No tech skills needed.</p>
+  <a href="#get-started" class="btn-primary" style="display:inline-flex;margin:0 auto" data-reveal>Claim This Design →</a>
+</section>
+
+<!-- LEAD FORM -->
+<section class="form-sect" id="get-started">
+  <div class="form-inner">
+    <p class="eyebrow">Free Preview — No Commitment</p>
+    <h2>Let's Build Your Website</h2>
+    <p>Leave your info and Maya will reach out within 24 hours.</p>
+    <form class="lead-form" id="leadForm">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <input type="tel" name="phone" placeholder="Your phone (optional)">
+      <textarea name="message" placeholder="Any questions or special requests? (optional)"></textarea>
+      <button type="submit" class="lead-submit">Yes, I Want This Website →</button>
+    </form>
+    <div class="form-success" id="formSuccess">✅ Got it! Maya will reach out within 24 hours.</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Baltimore's<em>BestCleaning</em></div>
+  <span class="footer-copy">© 2026 Baltimore's Best Cleaning · Dundalk, MD</span>
+  <div class="footer-badge">Preview by <a href="https://webbymaya.com" target="_blank">WebByMaya.com</a> · <a href="mailto:maya@webbymaya.com">maya@webbymaya.com</a></div>
+</footer>
+
+<div id="sticky-cta">
+  <div class="sticky-text">Like this design? <strong>Claim it for your business.</strong></div>
+  <a href="#get-started" class="sticky-btn">Get This Site — Starting at $499</a>
+</div>
+<div class="watermark">Preview by <strong>WebByMaya</strong><br><a href="mailto:maya@webbymaya.com">maya@webbymaya.com</a></div>
+
+<script>
+// Hero video fade-in
+const heroVid = document.getElementById('heroVid');
+if (heroVid) {
+  heroVid.addEventListener('canplay', () => heroVid.classList.add('loaded'), {once:true});
+  // Fallback: force-show after 4s if event misfires
+  setTimeout(() => heroVid.classList.add('loaded'), 4000);
+}
+
+// Nav scroll
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 70);
+}, {passive:true});
+
+// Sticky CTA after hero
+const hero    = document.querySelector('.hero');
+const stickyCta = document.getElementById('sticky-cta');
+new IntersectionObserver(([e]) => stickyCta.classList.toggle('show', !e.isIntersecting),
+  {threshold:0}).observe(hero);
+
+// Scroll reveals
+new IntersectionObserver((entries) => {
+  entries.forEach(el => {
+    if (el.isIntersecting) { el.target.classList.add('visible'); }
+  });
+}, {threshold:.12}).observe(document.querySelectorAll('[data-reveal]'));
+// Fix — observe all reveals
+document.querySelectorAll('[data-reveal]').forEach(el => {
+  new IntersectionObserver(([e]) => { if (e.isIntersecting) e.target.classList.add('visible'); },
+    {threshold:.1}).observe(el);
+});
+
+// Lead form
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(this));
+  const payload = {
+    business: 'Baltimore\'s Best Cleaning',
+    name:     data.name    || '',
+    email:    data.email   || '',
+    phone:    data.phone   || '',
+    message:  data.message || '',
+    source:   'mockup_preview',
+  };
+  // Save lead directly to Supabase
+  fetch('https://ycsauzlqsjjbusugshpz.supabase.co/rest/v1/mockup_leads', {
+    method: 'POST',
+    headers: {
+      'Content-Type':  'application/json',
+      'apikey':        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inljc2F1emxxc2pqYnVzdWdzaHB6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0NjMzMTQsImV4cCI6MjA5NTAzOTMxNH0._rjYuGZch-CA4sfm2rV3lvs_ixDcQfNFg90KWsbe1HI',
+      'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inljc2F1emxxc2pqYnVzdWdzaHB6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0NjMzMTQsImV4cCI6MjA5NTAzOTMxNH0._rjYuGZch-CA4sfm2rV3lvs_ixDcQfNFg90KWsbe1HI',
+      'Prefer':        'return=minimal',
+    },
+    body: JSON.stringify(payload),
+  }).catch(() => {});
+  this.style.display = 'none';
+  document.getElementById('formSuccess').style.display = 'block';
+});
+</script>
+</body>
+</html>
