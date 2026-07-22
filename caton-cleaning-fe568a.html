@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Caton Cleaning — Ellicott City</title>
+<title>Caton Cleaning — Philadelphia</title>
 <!-- Google tag (GA4) — tracks which emails/categories drive mockup views -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VNPY96XP9"></script>
 <script>
@@ -15,9 +15,9 @@
     custom_map: {'dimension1': 'business_category', 'dimension2': 'business_name'}
   });
   gtag('event', 'mockup_view', {
-    business_category: 'cleaning service',
+    business_category: '',
     business_name: 'Caton Cleaning',
-    business_city: 'Ellicott City'
+    business_city: 'Philadelphia'
   });
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--a:#7AB8DC;--d:#3A7EA8;--bg:#060a10;--surf:#111;--border:#1e1e1e;--text:#e2e2e2;--muted:#777}
+:root{--a:#D4A8D0;--d:#8B5E8B;--bg:#12080f;--surf:#111;--border:#1e1e1e;--text:#e2e2e2;--muted:#777}
 html{scroll-behavior:smooth}
 body{font-family:"Inter",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
 img{display:block;width:100%;object-fit:cover}
@@ -55,7 +55,7 @@ nav.scrolled{background:rgba(8,8,8,.97);backdrop-filter:blur(18px);border-color:
             object-fit:cover;opacity:0;transition:opacity 1.8s ease}
 .hero-vid.loaded{opacity:1}
 .hero-overlay{position:absolute;inset:0;z-index:2;
-  background:linear-gradient(to bottom,rgba(0,0,0,.42) 0%,#060a10bb 65%,#060a10 100%)}
+  background:linear-gradient(to bottom,rgba(0,0,0,.42) 0%,#12080fbb 65%,#12080f 100%)}
 .hero-content{position:relative;z-index:3;max-width:800px;margin:0 auto}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;
   background:rgba(255,255,255,.08);backdrop-filter:blur(10px);
@@ -102,7 +102,7 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
   transition:border-color .2s,transform .2s}
 .svc-card:hover{border-color:var(--a);transform:translateY(-5px)}
 .svc-icon{font-size:26px;width:54px;height:54px;border-radius:14px;
-  background:#7AB8DC18;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+  background:#D4A8D018;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
 .svc-card h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:10px}
 .svc-card p{font-size:14px;color:#666;line-height:1.7}
 
@@ -111,7 +111,7 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
            gap:12px;border-radius:18px;overflow:hidden}
 .gal-item{overflow:hidden;position:relative}
 .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;
-  background:linear-gradient(135deg,#3A7EA8,#060a10)}
+  background:linear-gradient(135deg,#8B5E8B,#12080f)}
 .gal-item:hover img{transform:scale(1.06)}
 .gal-item:first-child{grid-row:1/3}
 @media(max-width:768px){
@@ -124,18 +124,18 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
 .incl-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
 .incl-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
 .incl-item{display:flex;align-items:center;gap:12px;font-size:14px;color:#ccc;font-weight:500}
-.incl-check{width:26px;height:26px;border-radius:50%;background:#7AB8DC20;border:1px solid #7AB8DC60;
+.incl-check{width:26px;height:26px;border-radius:50%;background:#D4A8D020;border:1px solid #D4A8D060;
   display:flex;align-items:center;justify-content:center;color:var(--a);font-weight:700;font-size:13px;flex-shrink:0}
-.price-card{background:linear-gradient(135deg,#3A7EA822,var(--surf));
-  border:1px solid #7AB8DC50;border-radius:20px;padding:44px 40px;text-align:center}
-.price-badge{display:inline-block;background:#7AB8DC18;border:1px solid #7AB8DC40;
+.price-card{background:linear-gradient(135deg,#8B5E8B22,var(--surf));
+  border:1px solid #D4A8D050;border-radius:20px;padding:44px 40px;text-align:center}
+.price-badge{display:inline-block;background:#D4A8D018;border:1px solid #D4A8D040;
   color:var(--a);border-radius:8px;padding:6px 16px;font-size:12px;font-weight:700;
   text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
 .price-amount{font-family:"Playfair Display",serif;font-size:64px;font-weight:900;color:#fff;line-height:1}
 .price-label{color:var(--muted);font-size:14px;margin:8px 0 24px}
 .price-features{text-align:left;margin-bottom:28px}
 .price-feature{display:flex;align-items:center;gap:10px;padding:8px 0;
-  border-bottom:1px solid #7AB8DC20;font-size:14px;color:#bbb}
+  border-bottom:1px solid #D4A8D020;font-size:14px;color:#bbb}
 .price-feature:last-child{border-bottom:none}
 .price-feature span{color:var(--a);font-weight:700}
 @media(max-width:768px){.incl-inner{grid-template-columns:1fr}.incl-grid{grid-template-columns:1fr}}
@@ -145,12 +145,12 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
 .tl-step{display:flex;flex-direction:column;align-items:center;flex:1;min-width:140px;
            position:relative;padding:0 12px}
 .tl-step:not(:last-child)::after{content:'→';position:absolute;right:-8px;top:28px;
-  color:#7AB8DC;font-size:20px;font-weight:700}
+  color:#D4A8D0;font-size:20px;font-weight:700}
 .tl-num{width:56px;height:56px;border-radius:50%;
-  background:linear-gradient(135deg,#7AB8DC,#3A7EA8);
+  background:linear-gradient(135deg,#D4A8D0,#8B5E8B);
   display:flex;align-items:center;justify-content:center;
   font-family:"Playfair Display",serif;font-size:22px;font-weight:900;color:#fff;
-  margin-bottom:16px;box-shadow:0 0 0 6px #7AB8DC20}
+  margin-bottom:16px;box-shadow:0 0 0 6px #D4A8D020}
 .tl-title{font-size:14px;font-weight:700;color:#fff;text-align:center;margin-bottom:6px}
 .tl-desc{font-size:12px;color:var(--muted);text-align:center;line-height:1.6}
 
@@ -160,7 +160,7 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
 .rev-card{background:var(--surf);border:1px solid var(--border);border-radius:16px;padding:30px 26px}
 .rev-top{display:flex;align-items:center;gap:14px;margin-bottom:18px}
 .rev-avatar{width:44px;height:44px;border-radius:50%;
-  background:linear-gradient(135deg,#7AB8DC,#3A7EA8);
+  background:linear-gradient(135deg,#D4A8D0,#8B5E8B);
   display:flex;align-items:center;justify-content:center;
   font-size:17px;font-weight:700;color:#fff;flex-shrink:0}
 .rev-name{font-weight:700;color:#fff;font-size:14px}
@@ -182,8 +182,8 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
 .map-wrap iframe{width:100%;height:100%;border:0;display:block}
 
 /* CTA SECTION */
-.cta-sect{text-align:center;background:linear-gradient(135deg,#3A7EA825,#060a10);
-  border-top:1px solid #7AB8DC30;padding:96px 6%}
+.cta-sect{text-align:center;background:linear-gradient(135deg,#8B5E8B25,#12080f);
+  border-top:1px solid #D4A8D030;padding:96px 6%}
 .cta-sect h2{margin-bottom:16px}
 .cta-sect p{color:var(--muted);margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto}
 
@@ -197,32 +197,32 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
   background:#0f0f0f;border:1px solid #2a2a2a;border-radius:10px;
   padding:15px 18px;color:#fff;font-size:15px;font-family:"Inter",sans-serif;
   outline:none;transition:border-color .2s;width:100%}
-.lead-form input:focus,.lead-form textarea:focus{border-color:#7AB8DC}
+.lead-form input:focus,.lead-form textarea:focus{border-color:#D4A8D0}
 .lead-form textarea{resize:vertical;min-height:90px}
-.lead-submit{background:#7AB8DC;color:#060a10;font-weight:800;font-size:16px;
+.lead-submit{background:#D4A8D0;color:#12080f;font-weight:800;font-size:16px;
   padding:17px;border:none;border-radius:10px;cursor:pointer;
   transition:opacity .2s,transform .15s;font-family:"Inter",sans-serif}
 .lead-submit:hover{opacity:.88;transform:translateY(-2px)}
-.form-success{display:none;color:#7AB8DC;font-weight:700;font-size:17px;margin-top:16px;text-align:center}
+.form-success{display:none;color:#D4A8D0;font-weight:700;font-size:17px;margin-top:16px;text-align:center}
 
 /* FOOTER */
 footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
   display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 .footer-logo{font-family:"Playfair Display",serif;font-size:17px;font-weight:700;color:#fff}
-.footer-logo em{color:#7AB8DC;font-style:normal}
+.footer-logo em{color:#D4A8D0;font-style:normal}
 .footer-copy{font-size:12px;color:#444}
 .footer-badge{font-size:11px;color:#444;border:1px solid #1c1c1c;border-radius:6px;
   padding:5px 12px;background:#0a0a0a}
-.footer-badge a{color:#7AB8DC;font-weight:600}
+.footer-badge a{color:#D4A8D0;font-weight:600}
 
 /* STICKY CTA */
 #sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:400;
-  background:rgba(6,6,6,.97);backdrop-filter:blur(18px);border-top:1px solid #7AB8DC33;
+  background:rgba(6,6,6,.97);backdrop-filter:blur(18px);border-top:1px solid #D4A8D033;
   padding:14px 6%;display:flex;align-items:center;justify-content:space-between;gap:16px;
   transform:translateY(100%);transition:transform .4s cubic-bezier(.22,.68,0,1.2)}
 #sticky-cta.show{transform:translateY(0)}
 .sticky-text{font-size:14px;color:#888}.sticky-text strong{color:#fff}
-.sticky-btn{background:var(--a);color:#060a10;font-weight:800;font-size:14px;
+.sticky-btn{background:var(--a);color:#12080f;font-weight:800;font-size:14px;
   padding:12px 26px;border-radius:8px;white-space:nowrap;transition:opacity .15s}
 .sticky-btn:hover{opacity:.88}
 @media(max-width:640px){.sticky-text{display:none}#sticky-cta{justify-content:center}}
@@ -230,10 +230,10 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
 /* WATERMARK */
 .watermark{position:fixed;bottom:72px;right:18px;z-index:200;
   background:rgba(10,10,10,.96);backdrop-filter:blur(10px);
-  border:1px solid #7AB8DC55;border-radius:10px;padding:10px 14px;
+  border:1px solid #D4A8D055;border-radius:10px;padding:10px 14px;
   font-size:11px;color:#aaa;box-shadow:0 4px 24px rgba(0,0,0,.6)}
-.watermark strong{color:#7AB8DC}
-.watermark a{color:#7AB8DC;font-weight:600;text-decoration:none}
+.watermark strong{color:#D4A8D0}
+.watermark a{color:#D4A8D0;font-weight:600;text-decoration:none}
 
 /* ANIMATIONS */
 @keyframes kenBurns{
@@ -263,7 +263,7 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
     <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
   </div>
-  <a href="tel:4105307165" class="nav-cta">📞 Call Now</a>
+  <a href="tel:2155550100" class="nav-cta">📞 Call Now</a>
 </nav>
 
 <!-- HERO -->
@@ -272,11 +272,11 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
   <video class="hero-vid" id="heroVid" autoplay muted loop playsinline poster="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/caton-cleaning-img0.jpg"><source src="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/caton-cleaning-hero.mp4" type="video/mp4"></video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-badge"><span>Cleaning</span>&nbsp;·&nbsp;Ellicott City, PA</div>
+    <div class="hero-badge"><span>Beauty & Nails</span>&nbsp;·&nbsp;Philadelphia, PA</div>
     <h1>Caton Cleaning</h1>
-    <p class="hero-sub">Professional Cleaning You Can Trust — proudly serving Ellicott City and the surrounding area.</p>
+    <p class="hero-sub">Professional Nail Care & Beauty Services — proudly serving Philadelphia and the surrounding area.</p>
     <div class="hero-btns">
-      <a href="tel:4105307165" class="btn-primary">📞 (410) 530-7165</a>
+      <a href="tel:2155550100" class="btn-primary">📞 (215) 555-0100</a>
       <a href="#get-started" class="btn-outline">Get This Website →</a>
     </div>
   </div>
@@ -284,7 +284,7 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
 
 <!-- TRUST BAR -->
 <div class="trust" data-reveal>
-  <div class="trust-item"><div class="trust-num">10+</div><div class="trust-label">Years Serving Ellicott City</div></div>
+  <div class="trust-item"><div class="trust-num">10+</div><div class="trust-label">Years Serving Philadelphia</div></div>
   <div class="trust-item"><div class="trust-num">500+</div><div class="trust-label">Happy Customers</div></div>
   <div class="trust-item"><div class="trust-num">5★</div><div class="trust-label">Google Rating</div></div>
   <div class="trust-item"><div class="trust-num">Same Day</div><div class="trust-label">Response</div></div>
@@ -297,33 +297,33 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
   <p class="section-sub" data-reveal>Every service is delivered with the care and expertise your business deserves.</p>
   <div class="svc-grid">
       <div class="svc-card">
-        <div class="svc-icon">🏠</div>
-        <h3>Residential Cleaning</h3>
-        <p>Weekly, bi-weekly, and one-time deep cleans for homes of all sizes.</p>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon">🏢</div>
-        <h3>Commercial Cleaning</h3>
-        <p>Office, retail, and commercial space cleaning on your schedule.</p>
-      </div>
-      <div class="svc-card">
-        <div class="svc-icon">📦</div>
-        <h3>Move-In / Move-Out</h3>
-        <p>Thorough cleaning for tenants, landlords, and real estate agents.</p>
+        <div class="svc-icon">💅</div>
+        <h3>Manicures & Pedicures</h3>
+        <p>Classic, gel, and acrylic nails with attention to detail on every visit.</p>
       </div>
       <div class="svc-card">
         <div class="svc-icon">✨</div>
-        <h3>Deep Clean & Sanitize</h3>
-        <p>Full sanitization services including appliances, cabinets, and hard-to-reach areas.</p>
+        <h3>Nail Art & Design</h3>
+        <p>Custom designs, ombré, chrome, and seasonal patterns by our skilled artists.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">🛁</div>
+        <h3>Spa Treatments</h3>
+        <p>Relaxing foot soaks, callus removal, and moisturizing treatments.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">💆</div>
+        <h3>Waxing & Brow Services</h3>
+        <p>Quick, precise waxing for brows, lip, and more in a clean environment.</p>
       </div></div>
 </section>
 
 <!-- GALLERY -->
 <section id="gallery" style="padding-top:0">
   <div class="gallery">
-    <div class="gal-item"><img src="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/caton-cleaning-img1.jpg" alt="Caton Cleaning gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#3A7EA8,#060a10)';this.style.display='block';this.remove()"></div>
-    <div class="gal-item"><img src="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/caton-cleaning-img2.jpg" alt="Caton Cleaning gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#7AB8DC33,#060a10)';this.remove()"></div>
-    <div class="gal-item"><img src="https://picsum.photos/seed/catoncleaning3/800/600" alt="Caton Cleaning gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#3A7EA8,#7AB8DC44)';this.remove()"></div>
+    <div class="gal-item"><img src="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/caton-cleaning-img1.jpg" alt="Caton Cleaning gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#8B5E8B,#12080f)';this.style.display='block';this.remove()"></div>
+    <div class="gal-item"><img src="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/caton-cleaning-img2.jpg" alt="Caton Cleaning gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#D4A8D033,#12080f)';this.remove()"></div>
+    <div class="gal-item"><img src="https://picsum.photos/seed/catoncleaning3/800/600" alt="Caton Cleaning gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#8B5E8B,#D4A8D044)';this.remove()"></div>
   </div>
 </section>
 
@@ -337,27 +337,27 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
       <div class="incl-grid" data-reveal>
       <div class="incl-item">
         <div class="incl-check">✓</div>
-        <span>Online booking & scheduling</span>
+        <span>Online booking calendar</span>
       </div>
       <div class="incl-item">
         <div class="incl-check">✓</div>
-        <span>Service packages & pricing</span>
+        <span>Service menu with pricing</span>
       </div>
       <div class="incl-item">
         <div class="incl-check">✓</div>
-        <span>Before & after gallery</span>
+        <span>Photo gallery of work</span>
       </div>
       <div class="incl-item">
         <div class="incl-check">✓</div>
-        <span>Google Maps & coverage area</span>
+        <span>Google Maps & directions</span>
       </div>
       <div class="incl-item">
         <div class="incl-check">✓</div>
-        <span>Mobile-friendly site</span>
+        <span>Mobile-friendly design</span>
       </div>
       <div class="incl-item">
         <div class="incl-check">✓</div>
-        <span>Quote request form</span>
+        <span>Contact form</span>
       </div></div>
     </div>
     <div class="price-card" data-reveal>
@@ -408,39 +408,39 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
   <div class="rev-grid">
       <div class="rev-card">
         <div class="rev-top">
-          <div class="rev-avatar">N</div>
+          <div class="rev-avatar">J</div>
           <div>
-            <div class="rev-name">Nicole T.</div>
+            <div class="rev-name">Jennifer M.</div>
             <div class="rev-stars">★★★★★</div>
           </div>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/20px-Google_%22G%22_Logo.svg.png"
                style="margin-left:auto;opacity:.6;width:16px;height:16px" alt="Google" loading="lazy">
         </div>
-        <p class="rev-text">They left my house spotless. The team was professional, on time, and very thorough. I'm booking them monthly now.</p>
+        <p class="rev-text">Best nail salon in the area. The technicians are meticulous and always do exactly what I ask. My nails have never looked better!</p>
       </div>
       <div class="rev-card">
         <div class="rev-top">
           <div class="rev-avatar">K</div>
           <div>
-            <div class="rev-name">Kevin B.</div>
+            <div class="rev-name">Keisha T.</div>
             <div class="rev-stars">★★★★★</div>
           </div>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/20px-Google_%22G%22_Logo.svg.png"
                style="margin-left:auto;opacity:.6;width:16px;height:16px" alt="Google" loading="lazy">
         </div>
-        <p class="rev-text">Hired them for a move-out clean and got our full deposit back. They're worth every dollar.</p>
+        <p class="rev-text">Came in for a last-minute appointment and they fit me right in. Clean, professional, and my gel manicure is still perfect two weeks later.</p>
       </div>
       <div class="rev-card">
         <div class="rev-top">
           <div class="rev-avatar">S</div>
           <div>
-            <div class="rev-name">Susan W.</div>
+            <div class="rev-name">Sandra L.</div>
             <div class="rev-stars">★★★★☆</div>
           </div>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/20px-Google_%22G%22_Logo.svg.png"
                style="margin-left:auto;opacity:.6;width:16px;height:16px" alt="Google" loading="lazy">
         </div>
-        <p class="rev-text">Reliable and thorough. I've used a lot of cleaning services and this is the best one I've found.</p>
+        <p class="rev-text">Love coming here. Relaxing vibe and great work every time. The nail art designs are stunning.</p>
       </div></div>
 </section>
 
@@ -452,12 +452,12 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
     <div class="contact-card">
       <div class="contact-icon">📞</div>
       <div class="contact-label">Phone</div>
-      <div class="contact-val"><a href="tel:4105307165" style="color:#ddd">(410) 530-7165</a></div>
+      <div class="contact-val"><a href="tel:2155550100" style="color:#ddd">(215) 555-0100</a></div>
     </div>
     <div class="contact-card">
       <div class="contact-icon">📍</div>
       <div class="contact-label">Address</div>
-      <div class="contact-val">229 Ridgeway Rd, Catonsville, MD, 21228-4837</div>
+      <div class="contact-val">Philadelphia, PA</div>
     </div>
     <div class="contact-card" style="grid-column:span 2">
       <div class="contact-icon">🕐</div>
@@ -468,7 +468,7 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
     </div>
   </div>
   <div class="map-wrap" data-reveal>
-    <iframe src="https://maps.google.com/maps?q=229+Ridgeway+Rd%2C+Catonsville%2C+MD%2C+21228-4837&output=embed&z=15"
+    <iframe src="https://maps.google.com/maps?q=Philadelphia%2C+PA&output=embed&z=15"
       allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>
@@ -501,7 +501,7 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">Caton<em>Cleaning</em></div>
-  <span class="footer-copy">© 2026 Caton Cleaning · Ellicott City, MD</span>
+  <span class="footer-copy">© 2026 Caton Cleaning · Philadelphia, PA</span>
   <div class="footer-badge">Preview by <a href="https://webbymaya.com" target="_blank">WebByMaya.com</a> · <a href="mailto:maya@webbymaya.com">maya@webbymaya.com</a></div>
 </footer>
 
