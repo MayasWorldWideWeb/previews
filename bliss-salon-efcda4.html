@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bliss Salon — Pottsville</title>
+<title>Bliss Salon — Hammonton</title>
 <!-- Google tag (GA4) — tracks which emails/categories drive mockup views -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VNPY96XP9"></script>
 <script>
@@ -15,9 +15,9 @@
     custom_map: {'dimension1': 'business_category', 'dimension2': 'business_name'}
   });
   gtag('event', 'mockup_view', {
-    business_category: 'hair salon',
+    business_category: 'beauty salon',
     business_name: 'Bliss Salon',
-    business_city: 'Pottsville'
+    business_city: 'Hammonton'
   });
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--a:#D4A87C;--d:#8B6E3E;--bg:#120d08;--surf:#111;--border:#1e1e1e;--text:#e2e2e2;--muted:#777}
+:root{--a:#E8A4DF;--d:#8B3A87;--bg:#0d0508;--surf:#111;--border:#1e1e1e;--text:#e2e2e2;--muted:#777}
 html{scroll-behavior:smooth}
 body{font-family:"Inter",sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
 img{display:block;width:100%;object-fit:cover}
@@ -48,14 +48,14 @@ nav.scrolled{background:rgba(8,8,8,.97);backdrop-filter:blur(18px);border-color:
 /* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;
         text-align:center;position:relative;overflow:hidden;padding:110px 6% 80px}
-.hero-bg{position:absolute;inset:0;z-index:0;background-image:url('https://picsum.photos/seed/blisssalon0/1400/900');
+.hero-bg{position:absolute;inset:0;z-index:0;background-image:url('https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/bliss-salon-img0.jpg');
            background-size:cover;background-position:center;
            animation:kenBurns 28s ease-in-out infinite}
 .hero-vid{position:absolute;inset:0;z-index:1;width:100%;height:100%;
             object-fit:cover;opacity:0;transition:opacity 1.8s ease}
 .hero-vid.loaded{opacity:1}
 .hero-overlay{position:absolute;inset:0;z-index:2;
-  background:linear-gradient(to bottom,rgba(0,0,0,.42) 0%,#120d08bb 65%,#120d08 100%)}
+  background:linear-gradient(to bottom,rgba(0,0,0,.42) 0%,#0d0508bb 65%,#0d0508 100%)}
 .hero-content{position:relative;z-index:3;max-width:800px;margin:0 auto}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;
   background:rgba(255,255,255,.08);backdrop-filter:blur(10px);
@@ -102,7 +102,7 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
   transition:border-color .2s,transform .2s}
 .svc-card:hover{border-color:var(--a);transform:translateY(-5px)}
 .svc-icon{font-size:26px;width:54px;height:54px;border-radius:14px;
-  background:#D4A87C18;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+  background:#E8A4DF18;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
 .svc-card h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:10px}
 .svc-card p{font-size:14px;color:#666;line-height:1.7}
 
@@ -111,7 +111,7 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
            gap:12px;border-radius:18px;overflow:hidden}
 .gal-item{overflow:hidden;position:relative}
 .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;
-  background:linear-gradient(135deg,#8B6E3E,#120d08)}
+  background:linear-gradient(135deg,#8B3A87,#0d0508)}
 .gal-item:hover img{transform:scale(1.06)}
 .gal-item:first-child{grid-row:1/3}
 @media(max-width:768px){
@@ -124,18 +124,18 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
 .incl-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
 .incl-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
 .incl-item{display:flex;align-items:center;gap:12px;font-size:14px;color:#ccc;font-weight:500}
-.incl-check{width:26px;height:26px;border-radius:50%;background:#D4A87C20;border:1px solid #D4A87C60;
+.incl-check{width:26px;height:26px;border-radius:50%;background:#E8A4DF20;border:1px solid #E8A4DF60;
   display:flex;align-items:center;justify-content:center;color:var(--a);font-weight:700;font-size:13px;flex-shrink:0}
-.price-card{background:linear-gradient(135deg,#8B6E3E22,var(--surf));
-  border:1px solid #D4A87C50;border-radius:20px;padding:44px 40px;text-align:center}
-.price-badge{display:inline-block;background:#D4A87C18;border:1px solid #D4A87C40;
+.price-card{background:linear-gradient(135deg,#8B3A8722,var(--surf));
+  border:1px solid #E8A4DF50;border-radius:20px;padding:44px 40px;text-align:center}
+.price-badge{display:inline-block;background:#E8A4DF18;border:1px solid #E8A4DF40;
   color:var(--a);border-radius:8px;padding:6px 16px;font-size:12px;font-weight:700;
   text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px}
 .price-amount{font-family:"Playfair Display",serif;font-size:64px;font-weight:900;color:#fff;line-height:1}
 .price-label{color:var(--muted);font-size:14px;margin:8px 0 24px}
 .price-features{text-align:left;margin-bottom:28px}
 .price-feature{display:flex;align-items:center;gap:10px;padding:8px 0;
-  border-bottom:1px solid #D4A87C20;font-size:14px;color:#bbb}
+  border-bottom:1px solid #E8A4DF20;font-size:14px;color:#bbb}
 .price-feature:last-child{border-bottom:none}
 .price-feature span{color:var(--a);font-weight:700}
 @media(max-width:768px){.incl-inner{grid-template-columns:1fr}.incl-grid{grid-template-columns:1fr}}
@@ -145,12 +145,12 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
 .tl-step{display:flex;flex-direction:column;align-items:center;flex:1;min-width:140px;
            position:relative;padding:0 12px}
 .tl-step:not(:last-child)::after{content:'→';position:absolute;right:-8px;top:28px;
-  color:#D4A87C;font-size:20px;font-weight:700}
+  color:#E8A4DF;font-size:20px;font-weight:700}
 .tl-num{width:56px;height:56px;border-radius:50%;
-  background:linear-gradient(135deg,#D4A87C,#8B6E3E);
+  background:linear-gradient(135deg,#E8A4DF,#8B3A87);
   display:flex;align-items:center;justify-content:center;
   font-family:"Playfair Display",serif;font-size:22px;font-weight:900;color:#fff;
-  margin-bottom:16px;box-shadow:0 0 0 6px #D4A87C20}
+  margin-bottom:16px;box-shadow:0 0 0 6px #E8A4DF20}
 .tl-title{font-size:14px;font-weight:700;color:#fff;text-align:center;margin-bottom:6px}
 .tl-desc{font-size:12px;color:var(--muted);text-align:center;line-height:1.6}
 
@@ -160,7 +160,7 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
 .rev-card{background:var(--surf);border:1px solid var(--border);border-radius:16px;padding:30px 26px}
 .rev-top{display:flex;align-items:center;gap:14px;margin-bottom:18px}
 .rev-avatar{width:44px;height:44px;border-radius:50%;
-  background:linear-gradient(135deg,#D4A87C,#8B6E3E);
+  background:linear-gradient(135deg,#E8A4DF,#8B3A87);
   display:flex;align-items:center;justify-content:center;
   font-size:17px;font-weight:700;color:#fff;flex-shrink:0}
 .rev-name{font-weight:700;color:#fff;font-size:14px}
@@ -182,8 +182,8 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
 .map-wrap iframe{width:100%;height:100%;border:0;display:block}
 
 /* CTA SECTION */
-.cta-sect{text-align:center;background:linear-gradient(135deg,#8B6E3E25,#120d08);
-  border-top:1px solid #D4A87C30;padding:96px 6%}
+.cta-sect{text-align:center;background:linear-gradient(135deg,#8B3A8725,#0d0508);
+  border-top:1px solid #E8A4DF30;padding:96px 6%}
 .cta-sect h2{margin-bottom:16px}
 .cta-sect p{color:var(--muted);margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto}
 
@@ -197,32 +197,32 @@ h2{font-family:"Playfair Display",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-
   background:#0f0f0f;border:1px solid #2a2a2a;border-radius:10px;
   padding:15px 18px;color:#fff;font-size:15px;font-family:"Inter",sans-serif;
   outline:none;transition:border-color .2s;width:100%}
-.lead-form input:focus,.lead-form textarea:focus{border-color:#D4A87C}
+.lead-form input:focus,.lead-form textarea:focus{border-color:#E8A4DF}
 .lead-form textarea{resize:vertical;min-height:90px}
-.lead-submit{background:#D4A87C;color:#120d08;font-weight:800;font-size:16px;
+.lead-submit{background:#E8A4DF;color:#0d0508;font-weight:800;font-size:16px;
   padding:17px;border:none;border-radius:10px;cursor:pointer;
   transition:opacity .2s,transform .15s;font-family:"Inter",sans-serif}
 .lead-submit:hover{opacity:.88;transform:translateY(-2px)}
-.form-success{display:none;color:#D4A87C;font-weight:700;font-size:17px;margin-top:16px;text-align:center}
+.form-success{display:none;color:#E8A4DF;font-weight:700;font-size:17px;margin-top:16px;text-align:center}
 
 /* FOOTER */
 footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
   display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 .footer-logo{font-family:"Playfair Display",serif;font-size:17px;font-weight:700;color:#fff}
-.footer-logo em{color:#D4A87C;font-style:normal}
+.footer-logo em{color:#E8A4DF;font-style:normal}
 .footer-copy{font-size:12px;color:#444}
 .footer-badge{font-size:11px;color:#444;border:1px solid #1c1c1c;border-radius:6px;
   padding:5px 12px;background:#0a0a0a}
-.footer-badge a{color:#D4A87C;font-weight:600}
+.footer-badge a{color:#E8A4DF;font-weight:600}
 
 /* STICKY CTA */
 #sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:400;
-  background:rgba(6,6,6,.97);backdrop-filter:blur(18px);border-top:1px solid #D4A87C33;
+  background:rgba(6,6,6,.97);backdrop-filter:blur(18px);border-top:1px solid #E8A4DF33;
   padding:14px 6%;display:flex;align-items:center;justify-content:space-between;gap:16px;
   transform:translateY(100%);transition:transform .4s cubic-bezier(.22,.68,0,1.2)}
 #sticky-cta.show{transform:translateY(0)}
 .sticky-text{font-size:14px;color:#888}.sticky-text strong{color:#fff}
-.sticky-btn{background:var(--a);color:#120d08;font-weight:800;font-size:14px;
+.sticky-btn{background:var(--a);color:#0d0508;font-weight:800;font-size:14px;
   padding:12px 26px;border-radius:8px;white-space:nowrap;transition:opacity .15s}
 .sticky-btn:hover{opacity:.88}
 @media(max-width:640px){.sticky-text{display:none}#sticky-cta{justify-content:center}}
@@ -230,10 +230,10 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
 /* WATERMARK */
 .watermark{position:fixed;bottom:72px;right:18px;z-index:200;
   background:rgba(10,10,10,.96);backdrop-filter:blur(10px);
-  border:1px solid #D4A87C55;border-radius:10px;padding:10px 14px;
+  border:1px solid #E8A4DF55;border-radius:10px;padding:10px 14px;
   font-size:11px;color:#aaa;box-shadow:0 4px 24px rgba(0,0,0,.6)}
-.watermark strong{color:#D4A87C}
-.watermark a{color:#D4A87C;font-weight:600;text-decoration:none}
+.watermark strong{color:#E8A4DF}
+.watermark a{color:#E8A4DF;font-weight:600;text-decoration:none}
 
 /* ANIMATIONS */
 @keyframes kenBurns{
@@ -263,20 +263,20 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
     <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
   </div>
-  <a href="tel:6108415689" class="nav-cta">📞 Call Now</a>
+  <a href="tel:8564056770" class="nav-cta">📞 Call Now</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="hero-bg"></div>
-  
+  <video class="hero-vid" id="heroVid" autoplay muted loop playsinline poster="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/bliss-salon-img0.jpg"><source src="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/bliss-salon-hero.mp4" type="video/mp4"></video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-badge"><span>Hair Salon</span>&nbsp;·&nbsp;Pottsville, PA</div>
+    <div class="hero-badge"><span>Beauty & Style</span>&nbsp;·&nbsp;Hammonton, PA</div>
     <h1>Bliss Salon</h1>
-    <p class="hero-sub">Expert Hair Styling, Color & Care — proudly serving Pottsville and the surrounding area.</p>
+    <p class="hero-sub">Your Full-Service Beauty Destination — proudly serving Hammonton and the surrounding area.</p>
     <div class="hero-btns">
-      <a href="tel:6108415689" class="btn-primary">📞 (610) 841-5689</a>
+      <a href="tel:8564056770" class="btn-primary">📞 (856) 405-6770</a>
       <a href="#get-started" class="btn-outline">Get This Website →</a>
     </div>
   </div>
@@ -284,7 +284,7 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
 
 <!-- TRUST BAR -->
 <div class="trust" data-reveal>
-  <div class="trust-item"><div class="trust-num">10+</div><div class="trust-label">Years Serving Pottsville</div></div>
+  <div class="trust-item"><div class="trust-num">10+</div><div class="trust-label">Years Serving Hammonton</div></div>
   <div class="trust-item"><div class="trust-num">500+</div><div class="trust-label">Happy Customers</div></div>
   <div class="trust-item"><div class="trust-num">5★</div><div class="trust-label">Google Rating</div></div>
   <div class="trust-item"><div class="trust-num">Same Day</div><div class="trust-label">Response</div></div>
@@ -297,33 +297,33 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
   <p class="section-sub" data-reveal>Every service is delivered with the care and expertise your business deserves.</p>
   <div class="svc-grid">
       <div class="svc-card">
-        <div class="svc-icon">✂️</div>
-        <h3>Cuts & Styling</h3>
-        <p>Precision cuts for all hair types, from bobs to layers, blowouts to braids.</p>
+        <div class="svc-icon">💄</div>
+        <h3>Hair Styling & Color</h3>
+        <p>Cuts, blowouts, highlights, keratin, and custom color by experienced stylists.</p>
       </div>
       <div class="svc-card">
-        <div class="svc-icon">🎨</div>
-        <h3>Color & Highlights</h3>
-        <p>Balayage, ombré, full color, and glossing treatments by certified colorists.</p>
+        <div class="svc-icon">💅</div>
+        <h3>Nails & Manicures</h3>
+        <p>Gel, acrylic, and natural nail care plus pedicures in a relaxing environment.</p>
       </div>
       <div class="svc-card">
-        <div class="svc-icon">💆</div>
-        <h3>Treatments & Masks</h3>
-        <p>Keratin, deep conditioning, and bond repair treatments for healthy hair.</p>
+        <div class="svc-icon">👁️</div>
+        <h3>Lashes & Brows</h3>
+        <p>Lash extensions, lifts, microblading, tinting, and brow shaping by experts.</p>
       </div>
       <div class="svc-card">
-        <div class="svc-icon">👰</div>
-        <h3>Special Occasions</h3>
-        <p>Updos, bridal styles, and event-ready hair for any occasion.</p>
+        <div class="svc-icon">✨</div>
+        <h3>Skin & Waxing</h3>
+        <p>Facials, waxing, threading, and skin treatments for a flawless finish.</p>
       </div></div>
 </section>
 
 <!-- GALLERY -->
 <section id="gallery" style="padding-top:0">
   <div class="gallery">
-    <div class="gal-item"><img src="https://picsum.photos/seed/blisssalon1/800/600" alt="Bliss Salon gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#8B6E3E,#120d08)';this.style.display='block';this.remove()"></div>
-    <div class="gal-item"><img src="https://picsum.photos/seed/blisssalon2/800/600" alt="Bliss Salon gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#D4A87C33,#120d08)';this.remove()"></div>
-    <div class="gal-item"><img src="https://picsum.photos/seed/blisssalon3/800/600" alt="Bliss Salon gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#8B6E3E,#D4A87C44)';this.remove()"></div>
+    <div class="gal-item"><img src="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/bliss-salon-img1.jpg" alt="Bliss Salon gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#8B3A87,#0d0508)';this.style.display='block';this.remove()"></div>
+    <div class="gal-item"><img src="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/bliss-salon-img2.jpg" alt="Bliss Salon gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#E8A4DF33,#0d0508)';this.remove()"></div>
+    <div class="gal-item"><img src="https://ycsauzlqsjjbusugshpz.supabase.co/storage/v1/object/public/mockups/bliss-salon-img3.jpg" alt="Bliss Salon gallery" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#8B3A87,#E8A4DF44)';this.remove()"></div>
   </div>
 </section>
 
@@ -341,7 +341,7 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
       </div>
       <div class="incl-item">
         <div class="incl-check">✓</div>
-        <span>Service & pricing menu</span>
+        <span>Full service & pricing menu</span>
       </div>
       <div class="incl-item">
         <div class="incl-check">✓</div>
@@ -357,12 +357,12 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
       </div>
       <div class="incl-item">
         <div class="incl-check">✓</div>
-        <span>Contact form</span>
+        <span>Contact & booking form</span>
       </div></div>
     </div>
     <div class="price-card" data-reveal>
       <div class="price-badge">$499 · Free Domain + 1 Year Hosting</div>
-      <div class="price-amount">$499</div>
+      <div class="price-amount" data-offer="price">$499</div>
       <div class="price-label">One-time build &nbsp;·&nbsp; Free domain + hosting, year one</div>
       <div class="price-features">
         <div class="price-feature"><span>✓</span> Free domain — first year on us</div>
@@ -373,7 +373,7 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
         <div class="price-feature"><span>✓</span> Live in 7 days · 30-day support</div>
         <div class="price-feature"><span>✓</span> Then just $29/mo to keep it live &amp; maintained</div>
       </div>
-      <a href="https://buy.stripe.com/8x23cudmW2J97r28pB1ck02" class="btn-primary" style="display:flex;justify-content:center" target="_blank" rel="noopener">Get This Site Live — $499 →</a>
+      <a href="https://buy.stripe.com/8x23cudmW2J97r28pB1ck02" data-offer-href="checkout" class="btn-primary" style="display:flex;justify-content:center" target="_blank" rel="noopener">Get This Site Live — $499 →</a>
       <a href="#get-started" style="display:block;text-align:center;margin-top:10px;font-size:13px;color:#888;text-decoration:none">or ask a question first →</a>
     </div>
   </div>
@@ -411,39 +411,39 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
   <div class="rev-grid">
       <div class="rev-card">
         <div class="rev-top">
-          <div class="rev-avatar">M</div>
+          <div class="rev-avatar">J</div>
           <div>
-            <div class="rev-name">Maria G.</div>
+            <div class="rev-name">Jasmine T.</div>
             <div class="rev-stars">★★★★★</div>
           </div>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/20px-Google_%22G%22_Logo.svg.png"
                style="margin-left:auto;opacity:.6;width:16px;height:16px" alt="Google" loading="lazy">
         </div>
-        <p class="rev-text">Absolutely amazing! I've been going here for two years and the color work is consistently beautiful. Worth every penny.</p>
+        <p class="rev-text">Best salon in the area — they do everything here. Hair, nails, lashes. I never have to go anywhere else.</p>
       </div>
       <div class="rev-card">
         <div class="rev-top">
-          <div class="rev-avatar">D</div>
+          <div class="rev-avatar">C</div>
           <div>
-            <div class="rev-name">Danielle R.</div>
+            <div class="rev-name">Carmen R.</div>
             <div class="rev-stars">★★★★★</div>
           </div>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/20px-Google_%22G%22_Logo.svg.png"
                style="margin-left:auto;opacity:.6;width:16px;height:16px" alt="Google" loading="lazy">
         </div>
-        <p class="rev-text">Finally found a salon that understands my curly hair. They gave me the best cut I've ever had. I won't go anywhere else.</p>
+        <p class="rev-text">My hair has never looked so good. The colorist is absolutely amazing and the price is very reasonable.</p>
       </div>
       <div class="rev-card">
         <div class="rev-top">
-          <div class="rev-avatar">T</div>
+          <div class="rev-avatar">A</div>
           <div>
-            <div class="rev-name">Tara B.</div>
+            <div class="rev-name">Aaliyah M.</div>
             <div class="rev-stars">★★★★☆</div>
           </div>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/20px-Google_%22G%22_Logo.svg.png"
                style="margin-left:auto;opacity:.6;width:16px;height:16px" alt="Google" loading="lazy">
         </div>
-        <p class="rev-text">Great atmosphere, talented stylists, and very reasonable prices. My highlights came out exactly how I wanted.</p>
+        <p class="rev-text">Great experience every single time. The staff is professional, friendly, and they always deliver.</p>
       </div></div>
 </section>
 
@@ -455,12 +455,12 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
     <div class="contact-card">
       <div class="contact-icon">📞</div>
       <div class="contact-label">Phone</div>
-      <div class="contact-val"><a href="tel:6108415689" style="color:#ddd">(610) 841-5689</a></div>
+      <div class="contact-val"><a href="tel:8564056770" style="color:#ddd">(856) 405-6770</a></div>
     </div>
     <div class="contact-card">
       <div class="contact-icon">📍</div>
       <div class="contact-label">Address</div>
-      <div class="contact-val">7150 Hamilton Blvd Unit 102, Trexlertown, PA, 18087-6005</div>
+      <div class="contact-val">344 Delsea Dr Unit 2 Unit 2, Malaga, NJ, 08328-4400</div>
     </div>
     <div class="contact-card" style="grid-column:span 2">
       <div class="contact-icon">🕐</div>
@@ -471,7 +471,7 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
     </div>
   </div>
   <div class="map-wrap" data-reveal>
-    <iframe src="https://maps.google.com/maps?q=7150+Hamilton+Blvd+Unit+102%2C+Trexlertown%2C+PA%2C+18087-6005&output=embed&z=15"
+    <iframe src="https://maps.google.com/maps?q=344+Delsea+Dr+Unit+2+Unit+2%2C+Malaga%2C+NJ%2C+08328-4400&output=embed&z=15"
       allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>
@@ -481,7 +481,7 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
   <p class="eyebrow" data-reveal>Ready?</p>
   <h2 data-reveal>Get Bliss Salon's Website Live in 7 Days</h2>
   <p data-reveal>$499 — free domain + 1 year of hosting included. After year one, just $29/mo. No tech skills needed.</p>
-  <a href="https://buy.stripe.com/8x23cudmW2J97r28pB1ck02" class="btn-primary" style="display:inline-flex;margin:0 auto" data-reveal target="_blank" rel="noopener">Get This Site Live — $499 →</a>
+  <a href="https://buy.stripe.com/8x23cudmW2J97r28pB1ck02" data-offer-href="checkout" class="btn-primary" style="display:inline-flex;margin:0 auto" data-reveal target="_blank" rel="noopener">Get This Site Live — $499 →</a>
 </section>
 
 <!-- LEAD FORM -->
@@ -504,7 +504,7 @@ footer{background:#060606;border-top:1px solid #161616;padding:36px 6%;
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">Bliss<em>Salon</em></div>
-  <span class="footer-copy">© 2026 Bliss Salon · Pottsville, PA</span>
+  <span class="footer-copy">© 2026 Bliss Salon · Hammonton, NJ</span>
   <div class="footer-badge">Preview by <a href="https://webbymaya.com" target="_blank">WebByMaya.com</a> · <a href="mailto:maya@webbymaya.com">maya@webbymaya.com</a></div>
 </footer>
 
@@ -573,6 +573,24 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
   this.style.display = 'none';
   document.getElementById('formSuccess').style.display = 'block';
 });
+</script>
+<!-- Live offer sync: pulls current price + checkout link from ONE source so this
+     preview never goes stale when the offer changes. No regeneration ever needed. -->
+<script>
+(function(){
+  try{
+    fetch("https://mayasworldwideweb.github.io/previews/offer.json",{cache:"no-store"})
+      .then(function(r){ return r.json(); })
+      .then(function(o){
+        document.querySelectorAll("[data-offer]").forEach(function(el){
+          var k = el.getAttribute("data-offer"); if (o[k] != null) el.textContent = o[k];
+        });
+        document.querySelectorAll("[data-offer-href]").forEach(function(el){
+          var k = el.getAttribute("data-offer-href"); if (o[k]) el.setAttribute("href", o[k]);
+        });
+      }).catch(function(){});
+  }catch(e){}
+})();
 </script>
 </body>
 </html>
