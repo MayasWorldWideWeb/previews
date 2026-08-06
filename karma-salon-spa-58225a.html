@@ -547,28 +547,47 @@ document.querySelectorAll('[data-reveal]').forEach(el => {
 // Lead form
 document.getElementById('leadForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  const data = Object.fromEntries(new FormData(this));
+  const form = this;
+  const data = Object.fromEntries(new FormData(form));
+  const biz  = 'Karma Salon & Spa';
+  const details = [
+    data.message ? data.message : 'Requested this website preview.',
+    data.phone ? ('Phone: ' + data.phone) : '',
+    'Business: ' + biz,
+    'Source: mockup preview',
+  ].filter(Boolean).join('\n');
   const payload = {
-    business: 'Karma Salon & Spa',
-    name:     data.name    || '',
-    email:    data.email   || '',
-    phone:    data.phone   || '',
-    message:  data.message || '',
-    source:   'mockup_preview',
+    name:         (data.name || biz || 'Website preview lead').slice(0, 200),
+    email:        (data.email || '').slice(0, 320),
+    project_type: ('Website preview \u2014 ' + biz).slice(0, 100),
+    message:      details.slice(0, 5000),
+    referrer:     location.href,
   };
-  // Save lead directly to Supabase
-  fetch('https://ycsauzlqsjjbusugshpz.supabase.co/rest/v1/mockup_leads', {
+  fetch('https://pvzwngrgymjezkcevkce.supabase.co/rest/v1/contact_messages', {
     method: 'POST',
     headers: {
       'Content-Type':  'application/json',
-      'apikey':        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inljc2F1emxxc2pqYnVzdWdzaHB6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0NjMzMTQsImV4cCI6MjA5NTAzOTMxNH0._rjYuGZch-CA4sfm2rV3lvs_ixDcQfNFg90KWsbe1HI',
-      'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inljc2F1emxxc2pqYnVzdWdzaHB6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0NjMzMTQsImV4cCI6MjA5NTAzOTMxNH0._rjYuGZch-CA4sfm2rV3lvs_ixDcQfNFg90KWsbe1HI',
+      'apikey':        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB2enduZ3JneW1qZXprY2V2a2NlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0NjUzODIsImV4cCI6MjA5NTA0MTM4Mn0.zLyBbI7H2ydUqMqPFBO6e-dBAXdqpFZQEXUtDQNNuKw',
+      'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB2enduZ3JneW1qZXprY2V2a2NlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0NjUzODIsImV4cCI6MjA5NTA0MTM4Mn0.zLyBbI7H2ydUqMqPFBO6e-dBAXdqpFZQEXUtDQNNuKw',
       'Prefer':        'return=minimal',
     },
     body: JSON.stringify(payload),
-  }).catch(() => {});
-  this.style.display = 'none';
-  document.getElementById('formSuccess').style.display = 'block';
+  })
+  .then(function(r) {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    form.style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  })
+  .catch(function() {
+    var subj = encodeURIComponent('Website request \u2014 ' + biz);
+    var body = encodeURIComponent(details + '\n\nFrom: ' + (data.name || '') + ' <' + (data.email || '') + '>');
+    var note = document.createElement('p');
+    note.style.cssText = 'margin-top:1rem;font-weight:600;line-height:1.5';
+    note.innerHTML = "Sorry \u2014 that didn't go through. Email me directly at "
+      + '<a href="mailto:maya@webbymaya.com?subject=' + subj + '&body=' + body + '">maya@webbymaya.com</a>'
+      + ' and I\'ll get right back to you.';
+    form.appendChild(note);
+  });
 });
 </script>
 </body>
