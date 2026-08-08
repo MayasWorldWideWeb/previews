@@ -548,6 +548,11 @@ document.querySelectorAll('[data-reveal]').forEach(el => {
 });
 
 // Lead form
+// Posts to the CURRENT site project's contact_messages. The anon insert policy
+// requires name / email / project_type / message to all be non-empty, so those
+// are defaulted rather than sent blank. Success is shown ONLY after the row is
+// actually accepted — the previous version fired "Maya will reach out" no matter
+// what, while every submission was rejected, so leads vanished in silence.
 document.getElementById('leadForm').addEventListener('submit', function(e) {
   e.preventDefault();
   const form = this;
@@ -562,7 +567,7 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
   const payload = {
     name:         (data.name || biz || 'Website preview lead').slice(0, 200),
     email:        (data.email || '').slice(0, 320),
-    project_type: ('Website preview \u2014 ' + biz).slice(0, 100),
+    project_type: ('Website preview — ' + biz).slice(0, 100),
     message:      details.slice(0, 5000),
     referrer:     location.href,
   };
@@ -582,11 +587,12 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
     document.getElementById('formSuccess').style.display = 'block';
   })
   .catch(function() {
-    var subj = encodeURIComponent('Website request \u2014 ' + biz);
+    // Never swallow a lead. Hand them a channel that always works.
+    var subj = encodeURIComponent('Website request — ' + biz);
     var body = encodeURIComponent(details + '\n\nFrom: ' + (data.name || '') + ' <' + (data.email || '') + '>');
     var note = document.createElement('p');
     note.style.cssText = 'margin-top:1rem;font-weight:600;line-height:1.5';
-    note.innerHTML = "Sorry \u2014 that didn't go through. Email me directly at "
+    note.innerHTML = "Sorry — that didn't go through. Email me directly at "
       + '<a href="mailto:maya@webbymaya.com?subject=' + subj + '&body=' + body + '">maya@webbymaya.com</a>'
       + ' and I\'ll get right back to you.';
     form.appendChild(note);
